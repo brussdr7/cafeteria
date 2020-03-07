@@ -70,24 +70,37 @@
 			</div>
 		</div>
 	</div>
+	</body>
 	<footer>
-		<form method="post" action="doc.php">
+		
+		<form method="post" id="formularioEmail" >
 			<div class="footer-container">
 				<h3>Contactanos</h3>
 
 				<label for="nombre">Nombre</label>
-				<input type="text" name="nombre" id="nombre">
+				<input type="text" name="nombre" required id="nombre">
 
 				<label for="asunto">Asunto</label>
-				<input type="text" name="asunto" id="asunto">
+				<input type="text" required name="asunto" id="asunto">
 
 				<label for="email">Email</label>
-				<input type="text" placeholder="Dejame tu email" name="email" id="email">
-				<input type="submit">
+				<input type="text" required placeholder="Dejame tu email" name="email" id="email">
+				<button type="submit">subir</button>
 			</div>
 		</form>
+
+		<script type="text/javascript" >
+			var formulario = document.getElementById('formularioEmail');
+			formulario.addEventListener('submit', enviarEmail);
+
+			function enviarEmail() {
+				//enviar correo por maichimp
+				//evt.preventDefault();
+				alert("enviado");
+				//formulario.submit();
+			}
+		</script>
 	</footer>
-	</body>
 </html>
 
 
