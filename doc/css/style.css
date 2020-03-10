@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 20px;
 	background-color: white;
+	    margin-bottom: 30px;
 }
 
 /*<------section-header-------->*/
@@ -92,6 +93,10 @@ footer {
 	height: 50px;
 	display: flex;
 	align-items: center;
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .footer-container {
